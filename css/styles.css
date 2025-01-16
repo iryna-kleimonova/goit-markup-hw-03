@@ -137,13 +137,13 @@ button {
   text-align: center;
   color: #fff;
   margin: 0 auto 48px;
-  width: 496px;
+  max-width: 496px;
 }
 .hero-btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
   color: #fff;
   cursor: pointer;
   font-family: inherit;
@@ -153,7 +153,8 @@ button {
   border: none;
   border-radius: 4px;
   padding: 16px 32px;
-  width: 170px;
+  width: 169px;
+  height: 56px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -197,10 +198,10 @@ button {
   padding-bottom: 120px;
 }
 
-.team-container {
+/* .team-container {
   display: flex;
   align-items: center;
-}
+} */
 
 .team-title {
   font-size: 36px;
@@ -243,8 +244,7 @@ button {
 }
 
 .team-item-desc {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px 0;
 }
 
 /* --------PORTFOLIO------ */
@@ -264,8 +264,9 @@ button {
 .portfolio-list {
   display: flex;
   align-items: center;
-  gap: 24px 48px;
-  width: calc((100% - 72px) / 3);
+  column-gap: 24px;
+  row-gap: 48px;
+  width: calc((100% - 48px) / 3);
   flex-wrap: wrap;
 }
 .portfolio-item {
@@ -275,8 +276,8 @@ button {
 }
 
 .portfolio-container {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
 }
 
 .portfolio-subtitle {
